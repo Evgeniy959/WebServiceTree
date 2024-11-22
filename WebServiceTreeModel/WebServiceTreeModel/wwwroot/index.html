@@ -1,0 +1,254 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>TestApp</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <style>
+        td {
+            padding: 5px;
+        }
+
+        button {
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h2 class="text-center">Список электронной техники</h2>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 col-md-offset-3">
+                <div class="card" style="margin-top:15px">
+                    <div class="card-header">
+                        <h5 class="card-title text-center"> Добавление, изменение</h5>
+                    </div>
+                    <div class="card-body">
+                        <form>
+                            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                            <div class="form-group">
+                                <input type="hidden" id="elId" />
+                            </div>
+                            <div class="form-group">
+                                <label class="control-label">Название:</label>
+                                <input id="elName" class="form-control" />
+                            </div><div class="form-group">
+                                <label class="control-label">Категория:</label>
+                                <input id="elParent" class="form-control" />
+                            </div>
+                            <div class="form-group">
+                                <label class="control-label">Количество заказов:</label>
+                                <input id="elOrder" type="number" class="form-control" />
+                            </div>
+                            <br />
+                            <div class="form-group">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <input id="saveBtn" type="submit" class="form-control btn btn-primary" value="Сохранить" />
+                                    </div>
+                                    <div class="col-6">
+                                        <input id="resetBtn" type="submit" class="form-control btn btn-secondary" value="Сбросить" />
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <table class="tab">
+        <thead><tr class="d-table-row">
+    <th scope ="col">Название</th>
+    <th scope ="col">Категория</th>
+    <th scope ="col">Заказ</th>
+    <th scope="col"><div class="col-14"></div></th>
+    <th scope="col"><div class="col-14">Actions</div></th>
+    <th scope="col"><div class="col-14"></div></th>
+</thead>
+        <tbody>
+        </tbody>
+    </table>
+
+    <script>
+        // Получение всей электроники
+        async function getAll() {
+            // отправляет запрос и получаем ответ
+            const response = await fetch("/api/Electronics", {
+                method: "GET",
+                headers: { "Accept": "application/json" }
+            });
+            // если запрос прошел нормально
+            if (response.ok === true) {
+                // получаем данные
+                const electronics = await response.json();
+                const rows = document.querySelector("tbody");
+                // добавляем полученные элементы в таблицу
+                electronics.forEach(el => rows.append(row(el)));
+            }
+        }
+        // Получение одного элемента электроники
+        async function getElem(id) {
+            const response = await fetch(`/api/Electronics/${id}`, {
+                method: "GET",
+                headers: { "Accept": "application/json" }
+            });
+            if (response.ok === true) {
+                const electronics = await response.json();
+                document.getElementById("elId").value = electronics.Id;
+                document.getElementById("elName").value = electronics.Id;
+                document.getElementById("elParent").value = electronics.Parent;
+                document.getElementById("elOrder").value = electronics.Order;
+            }
+            else {
+                // если произошла ошибка, получаем сообщение об ошибке
+                const error = await response.json();
+                console.log(error.message); // и выводим его на консоль
+            }
+        }
+        // Добавление электроники
+        async function create(elName, elParent, elOrder) {
+
+            const response = await fetch("api/Electronics", {
+                method: "POST",
+                headers: { "Accept": "application/json", "Content-Type": "application/json" },
+                body: JSON.stringify({
+                    Id: elName,
+                    Parent: elParent,
+                    Order: elOrder
+                })
+            });
+            if (response.ok === true) {
+                const electronics = await response.json();
+                document.querySelector("tbody").append(row(electronics));
+            }
+            else {
+                const error = await response.json();
+                console.log(error.message);
+            }
+        }
+        // Изменение электроники
+        async function edit(elId, elName, elParent, elOrder) {
+            const response = await fetch(`/api/Electronics/${elName}`, {
+                method: "PUT",
+                headers: { "Accept": "application/json", "Content-Type": "application/json" },
+                body: JSON.stringify({
+                    Id: elName,
+                    Parent: elParent,
+                    Order: elOrder
+                })
+            });
+            if (response.ok === true) {
+                const electronics = await response.json();
+                document.querySelector(`tr[data-rowid='${electronics.Id}']`).replaceWith(row(electronics));
+            }
+            else {
+                const error = await response.json();
+                console.log(error.message);
+            }
+        }
+        // Удаление электроники
+        async function deleteElem(id) {
+            const response = await fetch(`/api/Electronics/${id}`, {
+                method: "DELETE",
+                headers: { "Accept": "application/json" }
+            });
+            if (response.ok === true) {
+                const electronics = await response.json();
+                document.querySelector(`tr[data-rowid='${electronics.Id}']`).remove();
+            }
+            else {
+                const error = await response.json();
+                console.log(error.message);
+            }
+        }
+
+        // Удаление всей электроники даной категории
+        async function deleteAll(id) {
+            const response = await fetch(`/api/Electronics/all/${id}`, {
+                method: "DELETE",
+                headers: { "Accept": "application/json" }
+            });
+            if (response.ok === true) {
+                const electronics = await response.json();
+                document.querySelector('table tbody').innerHTML = '';
+                getAll();
+            }
+            else {
+                const error = await response.json();
+                console.log(error.message);
+            }
+        }
+
+        // сброс данных формы после отправки
+        function reset() {
+            document.getElementById("elId").value =
+                document.getElementById("elName").value =
+                document.getElementById("elParent").value =
+                document.getElementById("elOrder").value = "";
+        }
+        // создание строки для таблицы
+        function row(electronics) {
+
+            const tr = document.createElement("tr");
+            tr.setAttribute("data-rowid", electronics.Id);
+
+            const nameTd = document.createElement("td");
+            nameTd.append(electronics.Id);
+            tr.append(nameTd);
+
+            const ParentTd = document.createElement("td");
+            ParentTd.append(electronics.Parent);
+            tr.append(ParentTd);
+            const OrderTd = document.createElement("td");
+            OrderTd.append(electronics.Order);
+            tr.append(OrderTd);
+
+            const linksTd = document.createElement("td");
+
+            const editLink = document.createElement("button");
+            editLink.append("Изменить");
+            editLink.addEventListener("click", async () => await getElem(electronics.Id));
+            linksTd.append(editLink);
+
+            const removeLink = document.createElement("button");
+            removeLink.append("Удалить");
+            removeLink.addEventListener("click", async () => await deleteElem(electronics.Id));
+            linksTd.append(removeLink);
+
+            const removeAllLink = document.createElement("button");
+            removeAllLink.append("Удалить все");
+            removeAllLink.addEventListener("click", async () => await deleteAll(electronics.Id));
+            linksTd.append(removeAllLink);
+
+            tr.appendChild(linksTd);
+
+            return tr;
+        }
+        // сброс значений формы
+        document.getElementById("resetBtn").addEventListener("click", () => reset());
+
+        // отправка формы
+        document.getElementById("saveBtn").addEventListener("click", async () => {
+
+            const id = document.getElementById("elId").value;
+            const name = document.getElementById("elName").value;
+            const parent = document.getElementById("elParent").value;
+            const order = document.getElementById("elOrder").value;
+            if (id === "")
+                await create(name, parent, order);
+            else
+                await edit(id, name, parent, order);
+            reset();
+        });
+
+        // загрузка электроники
+        getAll();
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+</body>
+</html>
