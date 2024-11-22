@@ -1,0 +1,125 @@
+{
+  "Version": 1,
+  "Hash": "/L848VashEA7Mb69t7cLVA4CTNC6gD41lCqJcmLhXRk=",
+  "Source": "WebServiceTreeModel",
+  "BasePath": "_content/WebServiceTreeModel",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "WebServiceTreeModel\\wwwroot",
+      "Source": "WebServiceTreeModel",
+      "ContentRoot": "D:\\D Aser\\Test2\\C#\\Проекты\\WebServiceTree\\WebServiceTreeModel\\WebServiceTreeModel\\wwwroot\\",
+      "BasePath": "_content/WebServiceTreeModel",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "D:\\D Aser\\Test2\\C#\\Проекты\\WebServiceTree\\WebServiceTreeModel\\WebServiceTreeModel\\wwwroot\\index.html",
+      "SourceId": "WebServiceTreeModel",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\D Aser\\Test2\\C#\\Проекты\\WebServiceTree\\WebServiceTreeModel\\WebServiceTreeModel\\wwwroot\\",
+      "BasePath": "_content/WebServiceTreeModel",
+      "RelativePath": "index#[.{fingerprint}]?.html",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "dq41fgmkgs",
+      "Integrity": "Nd2D9HnVPy07++GLCC+EGenGzuLmwxbDKWQf3nIrVdA=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\index.html"
+    }
+  ],
+  "Endpoints": [
+    {
+      "Route": "index.dq41fgmkgs.html",
+      "AssetFile": "D:\\D Aser\\Test2\\C#\\Проекты\\WebServiceTree\\WebServiceTreeModel\\WebServiceTreeModel\\wwwroot\\index.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "11183"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Nd2D9HnVPy07++GLCC+EGenGzuLmwxbDKWQf3nIrVdA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 22 Nov 2024 10:39:12 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "dq41fgmkgs"
+        },
+        {
+          "Name": "label",
+          "Value": "index.html"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-Nd2D9HnVPy07++GLCC+EGenGzuLmwxbDKWQf3nIrVdA="
+        }
+      ]
+    },
+    {
+      "Route": "index.html",
+      "AssetFile": "D:\\D Aser\\Test2\\C#\\Проекты\\WebServiceTree\\WebServiceTreeModel\\WebServiceTreeModel\\wwwroot\\index.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "11183"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Nd2D9HnVPy07++GLCC+EGenGzuLmwxbDKWQf3nIrVdA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 22 Nov 2024 10:39:12 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-Nd2D9HnVPy07++GLCC+EGenGzuLmwxbDKWQf3nIrVdA="
+        }
+      ]
+    }
+  ]
+}

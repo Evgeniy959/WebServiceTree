@@ -1,0 +1,29 @@
+{
+  "Files": [
+    {
+      "Id": "D:\\D Aser\\Test2\\C#\\Проекты\\WebServiceTree\\WebServiceTreeModel\\WebServiceTreeModel\\wwwroot\\index.html",
+      "PackagePath": "staticwebassets\\index.html"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.WebServiceTreeModel.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.WebServiceTreeModel.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.WebServiceTreeModel.props",
+      "PackagePath": "build\\WebServiceTreeModel.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.WebServiceTreeModel.props",
+      "PackagePath": "buildMultiTargeting\\WebServiceTreeModel.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.WebServiceTreeModel.props",
+      "PackagePath": "buildTransitive\\WebServiceTreeModel.props"
+    }
+  ],
+  "ElementsToRemove": []
+}
