@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "/L848VashEA7Mb69t7cLVA4CTNC6gD41lCqJcmLhXRk=",
+  "Hash": "TJ5dApBwzx3AB/lxe+Q5K4JEkPEZv9N+2NQtACKDlic=",
   "Source": "WebServiceTreeModel",
   "BasePath": "_content/WebServiceTreeModel",
   "Mode": "Default",
@@ -31,8 +31,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "dq41fgmkgs",
-      "Integrity": "Nd2D9HnVPy07++GLCC+EGenGzuLmwxbDKWQf3nIrVdA=",
+      "Fingerprint": "5lxo9am3i5",
+      "Integrity": "CfHeJh06WeRUPrzYS9mNHWaIMTorSITpGFo/tBGMb3E=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\index.html"
@@ -40,7 +40,7 @@
   ],
   "Endpoints": [
     {
-      "Route": "index.dq41fgmkgs.html",
+      "Route": "index.5lxo9am3i5.html",
       "AssetFile": "D:\\D Aser\\Test2\\C#\\Проекты\\WebServiceTree\\WebServiceTreeModel\\WebServiceTreeModel\\wwwroot\\index.html",
       "Selectors": [],
       "ResponseHeaders": [
@@ -50,7 +50,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "11183"
+          "Value": "12934"
         },
         {
           "Name": "Content-Type",
@@ -58,11 +58,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"Nd2D9HnVPy07++GLCC+EGenGzuLmwxbDKWQf3nIrVdA=\""
+          "Value": "\"CfHeJh06WeRUPrzYS9mNHWaIMTorSITpGFo/tBGMb3E=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 22 Nov 2024 10:39:12 GMT"
+          "Value": "Fri, 22 Nov 2024 16:30:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -72,7 +72,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "dq41fgmkgs"
+          "Value": "5lxo9am3i5"
         },
         {
           "Name": "label",
@@ -80,7 +80,7 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-Nd2D9HnVPy07++GLCC+EGenGzuLmwxbDKWQf3nIrVdA="
+          "Value": "sha256-CfHeJh06WeRUPrzYS9mNHWaIMTorSITpGFo/tBGMb3E="
         }
       ]
     },
@@ -95,7 +95,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "11183"
+          "Value": "12934"
         },
         {
           "Name": "Content-Type",
@@ -103,11 +103,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"Nd2D9HnVPy07++GLCC+EGenGzuLmwxbDKWQf3nIrVdA=\""
+          "Value": "\"CfHeJh06WeRUPrzYS9mNHWaIMTorSITpGFo/tBGMb3E=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 22 Nov 2024 10:39:12 GMT"
+          "Value": "Fri, 22 Nov 2024 16:30:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -117,7 +117,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-Nd2D9HnVPy07++GLCC+EGenGzuLmwxbDKWQf3nIrVdA="
+          "Value": "sha256-CfHeJh06WeRUPrzYS9mNHWaIMTorSITpGFo/tBGMb3E="
         }
       ]
     }

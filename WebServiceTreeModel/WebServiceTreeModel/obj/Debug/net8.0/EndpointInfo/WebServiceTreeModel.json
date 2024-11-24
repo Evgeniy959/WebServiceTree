@@ -170,41 +170,24 @@
         }
       }
     },
-    "/WeatherForecast": {
-      "get": {
+    "/api/Electronics/all/{id}": {
+      "delete": {
         "tags": [
-          "WeatherForecast"
+          "Electronics"
         ],
-        "operationId": "GetWeatherForecast",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
         "responses": {
           "200": {
-            "description": "OK",
-            "content": {
-              "text/plain": {
-                "schema": {
-                  "type": "array",
-                  "items": {
-                    "$ref": "#/components/schemas/WeatherForecast"
-                  }
-                }
-              },
-              "application/json": {
-                "schema": {
-                  "type": "array",
-                  "items": {
-                    "$ref": "#/components/schemas/WeatherForecast"
-                  }
-                }
-              },
-              "text/json": {
-                "schema": {
-                  "type": "array",
-                  "items": {
-                    "$ref": "#/components/schemas/WeatherForecast"
-                  }
-                }
-              }
-            }
+            "description": "OK"
           }
         }
       }
@@ -224,31 +207,8 @@
             "nullable": true
           },
           "Order": {
-            "type": "number",
-            "format": "double"
-          }
-        },
-        "additionalProperties": false
-      },
-      "WeatherForecast": {
-        "type": "object",
-        "properties": {
-          "Date": {
-            "type": "string",
-            "format": "date"
-          },
-          "TemperatureC": {
             "type": "integer",
             "format": "int32"
-          },
-          "TemperatureF": {
-            "type": "integer",
-            "format": "int32",
-            "readOnly": true
-          },
-          "Summary": {
-            "type": "string",
-            "nullable": true
           }
         },
         "additionalProperties": false

@@ -1,0 +1,65 @@
+td {
+    padding: 5px;
+}
+
+button {
+    margin: 5px;
+}
+table.table-1 {
+    width: 100%;
+    border-bottom: 1px solid #808053;
+}
+
+    table.table-1 > thead > tr > th {
+        box-sizing: border-box;
+        padding: 5px 15px;
+        text-align: left;
+        background-color: #808053;
+        color: #f2f0e6;
+        font-size: 20px;
+        font-weight: 400;
+    }
+
+    table.table-1 > tbody > tr:nth-child(odd) {
+        background-color: #f2f0e6;
+    }
+
+    table.table-1 > tbody > tr:nth-child(even) {
+        background-color: #e5e4da;
+    }
+
+    table.table-1 > tbody > tr > td {
+        box-sizing: border-box;
+        padding: 10px 15px;
+        text-align: left;
+        color: #333;
+        font-size: 18px;
+        font-weight: normal;
+        vertical-align: top;
+    }
+html {
+    font-size: 14px;
+}
+
+@media (min-width: 768px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+    box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    margin-bottom: 60px;
+    /*---------------------*/
+    background-image: linear-gradient(90deg, #ffbfdf 18.75%, #f2f2aa 18.75%, #f2f2aa 50%, #ffbfdf 50%, #ffbfdf 68.75%, #f2f2aa 68.75%, #f2f2aa 100%);
+    background-size: 16.00px 16.00px;
+    font-family: 'Fira Sans Extra Condensed', sans-serif;
+}

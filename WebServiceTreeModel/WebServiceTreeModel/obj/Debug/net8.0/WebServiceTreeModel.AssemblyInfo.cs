@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("WebServiceTreeModel")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+02b1270efe1f168b8666189f6b986123067289dc")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+70dce7abef5af1fa8e5c0bdb7e766b9810e2cc16")]
 [assembly: System.Reflection.AssemblyProductAttribute("WebServiceTreeModel")]
 [assembly: System.Reflection.AssemblyTitleAttribute("WebServiceTreeModel")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
