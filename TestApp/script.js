@@ -135,7 +135,7 @@
             const linksTd = document.createElement("td");
 
             const editLink = document.createElement("button");
-            editLink.className = "btn btn-info"
+            editLink.className = "btn btn-info";
             editLink.append("Изменить");
             editLink.addEventListener("click", async () => await getElem(electronics.Id));
             linksTd.append(editLink);
@@ -175,4 +175,3 @@
 
         // загрузка списка электроники
         getAll();
-        console.log("hello js")

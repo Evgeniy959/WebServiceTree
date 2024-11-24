@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "TJ5dApBwzx3AB/lxe+Q5K4JEkPEZv9N+2NQtACKDlic=",
+  "Hash": "bkNE+dHhBT7fC/Ab+mf14YzyuR8/Xu9dKMItkFNuy5E=",
   "Source": "WebServiceTreeModel",
   "BasePath": "_content/WebServiceTreeModel",
   "Mode": "Default",
@@ -31,59 +31,14 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "5lxo9am3i5",
-      "Integrity": "CfHeJh06WeRUPrzYS9mNHWaIMTorSITpGFo/tBGMb3E=",
+      "Fingerprint": "krrkpfsbyj",
+      "Integrity": "cGFg7r1yY4eS1eVzwI+Mm2oEKOysmW1Gs64UegtPi9k=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\index.html"
     }
   ],
   "Endpoints": [
-    {
-      "Route": "index.5lxo9am3i5.html",
-      "AssetFile": "D:\\D Aser\\Test2\\C#\\Проекты\\WebServiceTree\\WebServiceTreeModel\\WebServiceTreeModel\\wwwroot\\index.html",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "12934"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/html"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"CfHeJh06WeRUPrzYS9mNHWaIMTorSITpGFo/tBGMb3E=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 22 Nov 2024 16:30:05 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "5lxo9am3i5"
-        },
-        {
-          "Name": "label",
-          "Value": "index.html"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-CfHeJh06WeRUPrzYS9mNHWaIMTorSITpGFo/tBGMb3E="
-        }
-      ]
-    },
     {
       "Route": "index.html",
       "AssetFile": "D:\\D Aser\\Test2\\C#\\Проекты\\WebServiceTree\\WebServiceTreeModel\\WebServiceTreeModel\\wwwroot\\index.html",
@@ -95,7 +50,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "12934"
+          "Value": "13029"
         },
         {
           "Name": "Content-Type",
@@ -103,11 +58,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"CfHeJh06WeRUPrzYS9mNHWaIMTorSITpGFo/tBGMb3E=\""
+          "Value": "\"cGFg7r1yY4eS1eVzwI+Mm2oEKOysmW1Gs64UegtPi9k=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 22 Nov 2024 16:30:05 GMT"
+          "Value": "Sun, 24 Nov 2024 10:01:17 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -117,7 +72,52 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-CfHeJh06WeRUPrzYS9mNHWaIMTorSITpGFo/tBGMb3E="
+          "Value": "sha256-cGFg7r1yY4eS1eVzwI+Mm2oEKOysmW1Gs64UegtPi9k="
+        }
+      ]
+    },
+    {
+      "Route": "index.krrkpfsbyj.html",
+      "AssetFile": "D:\\D Aser\\Test2\\C#\\Проекты\\WebServiceTree\\WebServiceTreeModel\\WebServiceTreeModel\\wwwroot\\index.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "13029"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"cGFg7r1yY4eS1eVzwI+Mm2oEKOysmW1Gs64UegtPi9k=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 24 Nov 2024 10:01:17 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "krrkpfsbyj"
+        },
+        {
+          "Name": "label",
+          "Value": "index.html"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-cGFg7r1yY4eS1eVzwI+Mm2oEKOysmW1Gs64UegtPi9k="
         }
       ]
     }

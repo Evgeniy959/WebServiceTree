@@ -121,9 +121,7 @@
                 <th scope="col">Название</th>
                 <th scope="col">Категория</th>
                 <th scope="col">Заказ</th>
-                <th scope="col"></th>
-                <th scope="col">Actions</th>
-                <th scope="col"></th>
+                <th scope="col">Действия</th>
         </thead>
         <tbody>
         </tbody>
@@ -266,16 +264,19 @@
             const linksTd = document.createElement("td");
 
             const editLink = document.createElement("button");
+            editLink.className = "btn btn-info";
             editLink.append("Изменить");
             editLink.addEventListener("click", async () => await getElem(electronics.Id));
             linksTd.append(editLink);
 
             const removeLink = document.createElement("button");
+            removeLink.className = "btn btn-secondary";
             removeLink.append("Удалить");
             removeLink.addEventListener("click", async () => await deleteElem(electronics.Id));
             linksTd.append(removeLink);
 
             const removeAllLink = document.createElement("button");
+            removeAllLink.className = "btn btn-danger";
             removeAllLink.append("Удалить все");
             removeAllLink.addEventListener("click", async () => await deleteAll(electronics.Id));
             linksTd.append(removeAllLink);

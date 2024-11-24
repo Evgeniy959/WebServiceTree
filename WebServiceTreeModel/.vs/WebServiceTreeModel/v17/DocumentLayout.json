@@ -7,12 +7,12 @@
       "RelativeMoniker": "D:0:0:{556E7B31-855B-43DD-87B1-D682BFA642BD}|WebServiceTreeModel\\WebServiceTreeModel.csproj|solutionrelative:webservicetreemodel\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{556E7B31-855B-43DD-87B1-D682BFA642BD}|WebServiceTreeModel\\WebServiceTreeModel.csproj|d:\\d aser\\test2\\c#\\\u043F\u0440\u043E\u0435\u043A\u0442\u044B\\webservicetree\\webservicetreemodel\\webservicetreemodel\\controllers\\electronicscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{556E7B31-855B-43DD-87B1-D682BFA642BD}|WebServiceTreeModel\\WebServiceTreeModel.csproj|solutionrelative:webservicetreemodel\\controllers\\electronicscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{556E7B31-855B-43DD-87B1-D682BFA642BD}|WebServiceTreeModel\\WebServiceTreeModel.csproj|d:\\d aser\\test2\\c#\\\u043F\u0440\u043E\u0435\u043A\u0442\u044B\\webservicetree\\webservicetreemodel\\webservicetreemodel\\wwwroot\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{556E7B31-855B-43DD-87B1-D682BFA642BD}|WebServiceTreeModel\\WebServiceTreeModel.csproj|solutionrelative:webservicetreemodel\\wwwroot\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{556E7B31-855B-43DD-87B1-D682BFA642BD}|WebServiceTreeModel\\WebServiceTreeModel.csproj|d:\\d aser\\test2\\c#\\\u043F\u0440\u043E\u0435\u043A\u0442\u044B\\webservicetree\\webservicetreemodel\\webservicetreemodel\\controllers\\electronicscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{556E7B31-855B-43DD-87B1-D682BFA642BD}|WebServiceTreeModel\\WebServiceTreeModel.csproj|solutionrelative:webservicetreemodel\\controllers\\electronicscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{556E7B31-855B-43DD-87B1-D682BFA642BD}|WebServiceTreeModel\\WebServiceTreeModel.csproj|d:\\d aser\\test2\\c#\\\u043F\u0440\u043E\u0435\u043A\u0442\u044B\\webservicetree\\webservicetreemodel\\webservicetreemodel\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
@@ -91,7 +91,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "ElectronicsController.cs",
               "DocumentMoniker": "D:\\D Aser\\Test2\\C#\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\WebServiceTree\\WebServiceTreeModel\\WebServiceTreeModel\\Controllers\\ElectronicsController.cs",
               "RelativeDocumentMoniker": "WebServiceTreeModel\\Controllers\\ElectronicsController.cs",
@@ -115,13 +115,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "index.html",
               "DocumentMoniker": "D:\\D Aser\\Test2\\C#\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\WebServiceTree\\WebServiceTreeModel\\WebServiceTreeModel\\wwwroot\\index.html",
               "RelativeDocumentMoniker": "WebServiceTreeModel\\wwwroot\\index.html",
               "ToolTip": "D:\\D Aser\\Test2\\C#\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B\\WebServiceTree\\WebServiceTreeModel\\WebServiceTreeModel\\wwwroot\\index.html",
               "RelativeToolTip": "WebServiceTreeModel\\wwwroot\\index.html",
-              "ViewState": "AgIAAHgAAAAAAAAAAAAAAA8AAAAYAAAAAAAAAA==",
+              "ViewState": "AgIAAC0AAAAAAAAAAAAAABYBAAA3AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
               "WhenOpened": "2024-11-17T06:02:59.83Z"
             },
